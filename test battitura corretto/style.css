@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: dodgerblue;
+    transform-origin: 0 0;
+    margin:0; /* cancellare i margin */
+    text-align:center; /* allineare al centro */
+}
+
+h1{
+    font-family: Poppins;
+    transform-origin: 0 0;
+    margin:auto; /* allineare al centro */
+}
+
+#parole{
+    height: 40px;
+    width: 400px;
+    border-radius: 6px;
+    border-color: black;
+    text-align: center;
+    margin:auto; /* allineare al centro */
+    font-size: 25px;
+    transform-origin: 0 0;
+}
+
+#timer{
+    height: 30px;
+    width: 50px;
+    border-radius: 6px;
+    border-color: black;
+    background-color: blueviolet;
+    font-size: 20px;
+    text-align: center;
+    margin:auto; /* allineare al centro */
+    transform-origin: 0 0;
+}
+
+#restart{
+    height: 30px;
+    width: 30px;
+    margin:auto; /* allineare al centro */
+    transform-origin: 0 0;
+}
+
+#scrittore{
+    height: 40px;
+    width: 400px;
+    border-radius: 6px;
+    border-color: black;
+    text-align: center;
+    margin:auto; /* allineare al centro */
+    font-size: 25px;
+    transform-origin: 0 0;
+}
+
+#risultati{
+    height: 40px;
+    width: 400px;
+    border-radius: 6px;
+    border-color: black;
+    text-align: center;
+    margin:auto; /* allineare al centro */
+    font-size: 25px;
+    transform-origin: 0 0;
+}

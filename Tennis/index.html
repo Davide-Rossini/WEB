@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tennis</title>
+</head>
+<body>
+    <div class="overflow-x-auto">
+        <table class="table w-full">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>NOME</th>
+              <th>SET</th>
+              <th>GIOCHI</th>
+              <th>PUNTEGGI</th>
+              <th>PULSANTE</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTask">
+            <!-- row 1 -->
+            <tr>
+              <th>Giocatore 1</th>
+              <td><input type="number" id="set" placeholder="Set..." class="input input-bordered w-full max-w-xs" list = "possibilitaS"/></td>
+              <datalist id="possibilitaS">
+                <option id = "0"value="0"></option>
+                <option id = "1"value="1"></option>
+                <option id = "2" value="2"></option>
+              </datalist> 
+              <td><input type="number" id="giochi" placeholder="Giochi..." class="input input-bordered w-full max-w-xs" list = "Game"/></td>
+              <datalist id="Game">
+                <option id = "0"value="0"></option>
+                <option id = "1"value="1"></option>
+                <option id = "2" value="2"></option>
+              </datalist> 
+              <td><input type="number" id="punteggi" placeholder="Punteggi..." class="input input-bordered w-full max-w-xs" list = "possibilitaP"/></td>
+              <datalist id="possibilitaP">
+                <option id = "0"value="0"></option>
+                <option id = "15"value="15"></option>
+                <option id = "30" value="30"></option>
+                <option id = "40" value="40"></option>
+                <option value="Additional"></option>
+              </datalist>
+              <td><button class="btn btn-success" id="btnAdd">Aggiungi✖️</button></td>
+            </tr>
+            <tr>
+                <th>Giocatore 2</th>
+                <td> <input type="text" id="set2" placeholder="Set..." class="input input-bordered w-full max-w-xs"/></td>
+                <td><input type="text" id="giochi2" placeholder="Giochi..." class="input input-bordered w-full max-w-xs"/></td>
+                <td><input type="text" id="punteggi2" placeholder="Punteggi..." class="input input-bordered w-full max-w-xs"/></td>
+                <td><button class="btn btn-success" id="btnAdd2">Aggiungi✖️</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <script src="main.js"></script>
+</body>
+</html>

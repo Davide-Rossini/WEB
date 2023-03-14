@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Tabellone Tennis</title>
+</head>
+<body>
+    <h1>Tabellone Tennis 🎾</h1>
+    <br>
+    <button class="reset" ><span class="material-symbols-outlined">
+        restart_alt
+        </span>
+    </button><br>
+
+    <br>
+    <table class="tabella" border="2">
+        <tr class="intestazione">
+            <th class="attributi">Nome</th>
+            <th class="attributi">Set</th>
+            <th class="attributi">Giochi</th>
+            <th class="attributi">Punteggio</th>
+            <th class="attributi">Aggiungi</th>
+        </tr>
+        <tr class="giocatore1">
+            <td class="nome">Giocatore1</td>
+            <td><input type="text" class="g1-set"></td>
+            <td><input type="text" class="g1-giochi"></td>
+            <td><input type="text" class="g1-punteggio"></td>
+            <td><button id="btn-1" class="aggiungi">Punto</button></td>
+        </tr>
+        <tr class="giocatore2">
+            <td class="nome">Giocatore2</td>
+            <td><input type="text" class="g2-set"></td>
+            <td><input type="text" class="g2-giochi"></td>
+            <td><input type="text" class="g2-punteggio"></td>
+            <td><button id="btn-2" class = "aggiungi">Punto</button></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

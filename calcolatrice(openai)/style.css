@@ -1,0 +1,69 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(red,black);
+}
+  h1{
+    text-align: center;
+    color: black;
+    font-family: Electrolize;
+    font-size: 40px;
+  }
+  
+.button-calc{
+    font-family: Electrolize;
+    font-size: 25px;
+    height: 65px;
+    width: 85px;
+    border-color: rgb(22, 53, 7);
+    font-weight: bold;
+    background-color: yellow;
+    
+}
+.schermo{
+    font-family: Orbitron;
+    text-align: right;
+    font-size: 35px;
+    height: 55px;
+    width: 344px;
+    border-color: rgb(22, 53, 7);
+    background-color: brown;
+    
+
+}
+.calc{
+    text-align: center;
+}
+
+#mol{
+    color: aqua;
+    font-weight: bold;
+}
+
+#div {
+    color: purple;
+    font-weight: bold;
+
+}
+
+#add{
+    color: crimson;
+    font-weight: bold;
+    
+}
+
+#men{
+    color: green;
+    font-weight: bold;
+}
+
+#cancella{
+    color: red;
+    font-weight: bold;
+}
+
+#logo{
+    height: 100px;
+    margin-left: 920px;
+}
+

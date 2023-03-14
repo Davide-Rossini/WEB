@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Appuntamenti</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+      .centrato {text-align: center;}
+      
+      </style>
+
+</head>
+<body>
+  
+    <br>
+    <h1 class = "centrato"style="color:blue; font-size:40px;"><b>📒Gestione Note 1.0📒</b></h1>
+    <br>
+    <input type="text" id="edtNota" placeholder="Scrivi qui..." class="input input-bordered input-warning w-full max-w-xs" />
+    <div class="tooltip" data-tip="Aggiungi alla lista...">
+        <button class="btn btn-success" id="btnAdd">Aggiungi✖️</button>
+    </div>
+    
+    <div class="tooltip" data-tip="Cancella la lista...">
+        <button class="btn btn-outline btn-error" id="btnClear">Cancella lista❌</button>
+    </div>
+    
+    <br>
+    <ul id="listaTask">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+  </ul>
+  <div class="overflow-x-auto">
+      <table class="table w-full">
+        <!-- head -->
+        <thead>
+          <tr>
+            <th>N.</th>
+            <th>Data</th>
+            <th>Ora</th>
+            <th>Task</th>
+          </tr>
+        </thead>
+        <tbody id="bodyTask">
+          <!-- row 1 -->
+          <tr>
+            <th>1</th>
+            <td>29/10/2022</td>
+            <td>11:24:00</td>
+            <td>DaisyUI Usage</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+        <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+          <div>
+            <p>Copyright © 2022 - All right reserved by I miei Progetti di laboratorio</p>
+          </div>
+        </footer>
+<script src="main.js"></script>
+</body>
