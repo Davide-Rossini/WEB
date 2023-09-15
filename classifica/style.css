@@ -1,0 +1,7 @@
+html,body{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(#e66465, #9198e5);
+}
