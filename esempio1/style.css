@@ -1,0 +1,8 @@
+html,body,h1{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: burlywood;
+}
