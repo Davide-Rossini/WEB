@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcolatore Codice Fiscale</title>
+</head>
+<body>
+    <h1>Calcolatore Codice Fiscale</h1>
+    <h4>Inserisci i dati:</h4>
+    <div class="dati">
+        <div class="d_nome">
+            <p>Nome:</p>
+            <input type="text" id="nome" class="input">
+        </div>
+        <div class="d_cognome">
+            <p>Cognome:</p>
+            <input type="text" id="cognome" class="input">
+        </div>
+        <div class="d_data">
+            <p>Data di nascita:</p>
+            <input type="date" id="data" class="input">
+        </div>
+        <div class="d_sesso">
+            <p>Sesso:</p>
+            <select name="" id="sesso" class="input-sesso">
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+        <div class="d_luogo-nascita">
+            <p>Luogo di nascita (sigla):</p>
+            <input type="text" id="luogo-nascita" class="input">
+        </div>
+        <br>
+        <div class="btn">
+            <button id="calcola">Calcola</button>
+        </div>
+        <h4>Risultato:</h4>
+        <div class="risultato">
+            <input type="text" readonly class="input">
+        </div>
+        <br>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
