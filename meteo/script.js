@@ -35,6 +35,5 @@ let getMeteo = () => {
         });
     }
 };
-
 cerca.addEventListener("click", getMeteo);
 window.addEventListener("load", getMeteo);

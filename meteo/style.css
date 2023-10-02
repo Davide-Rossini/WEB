@@ -27,26 +27,31 @@ body {
     border-radius: 0.6em;
     box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
 }
+
 .ricerca {
     display: grid;
     grid-template-columns: 9fr 3fr;
     gap: 1.2em;
 }
+
 .ricerca input,
 .ricerca button {
     font-size: 0.9em;
     outline: none;
     border-radius: 0.3em;
 }
+
 .ricerca input {
     background-color: transparent;
     border: 1px solid #ffffff;
     padding: 0.7em;
     color: #ffffff;
 }
+
 .ricerca input:focus {
     border-color: #ffffff;
 }
+
 .ricerca button {
     background-color: #e86b12;
     border: none;
@@ -56,6 +61,7 @@ body {
 #risultato {
     color: #ffffff;
 }
+
 .informazioni {
     position: relative;
     display: grid;
@@ -68,4 +74,12 @@ h2{
     color: #ffffff;
     font-size: 1.0em;
     margin-bottom: 0.5em;
+}
+
+.ricerca button:hover {
+    background-color: #d45c07;
+}
+
+.ricerca input:hover {
+    border-color: #4356fe;
 }
