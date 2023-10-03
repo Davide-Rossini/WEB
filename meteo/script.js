@@ -4,7 +4,7 @@ let risultato = document.getElementById("risultato");
 
 let getMeteo = () => {
     let nome_citta = ricerca_citta.value.trim(); 
-    let url = 'https://api.openweathermap.org/data/2.5/weather?q='+nome_citta+'&appid=7522c38e96cc33f1ee5bd0def3168748&lang=ita';
+    let url = 'https://api.openweathermap.org/data/2.5/weather?q='+nome_citta+'&appid=7522c38e96cc33f1ee5bd0def3168748&lang=it';
     if(nome_citta === ""){
         alert("Inserisci il nome della città");
     }
