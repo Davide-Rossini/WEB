@@ -10,10 +10,13 @@
     <div class="container">
         <div class="ricerca">
             <input type="text" id="ricerca-citta" placeholder="Inserisci la città...">
-            <button id="cerca">Cerca</button>
+            <div class="loader-wrapper">
+                <button id="cerca">Cerca</button>
+                <span class="loader"></span>
+            </div>
         </div>
         <div id="risultato"></div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
