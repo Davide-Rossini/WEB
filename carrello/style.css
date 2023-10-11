@@ -1,0 +1,14 @@
+categoria{
+    color: red;
+    font-weight: bold;
+}
+
+marca{
+    font-weight: bold;
+    color: green;
+}
+
+confezioni{
+    font-weight: bold;
+    color: blue;
+}

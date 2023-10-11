@@ -1,0 +1,78 @@
+<!-- Esercizio n.2: tradurre in linguaggio XML i seguenti dati, relativi al carrello della
+spesa nell’ordine online discusso precedentemente. “Il carrello è composto dai
+seguenti articoli: 2 confezioni di latte parzialmente scremato da 1 litro con data
+scadenza di almeno 4 giorni dalla data di consegna della spesa; 1 confezione di
+gelato Slurp al gusto di limone da 250 grammi; una confezione di caffè Hug da 20
+bustine; 2 pani da 500 grammi senza sale; 0.5 kg di pomodoro oblungo rosso; 1 cassa
+di acqua naturale da 6 bottiglie”.  -->
+
+<?xml-stylesheet href="style.css" type="text/css"?>
+<ordine>
+    <carrello>
+        <articolo>
+            <categoria>latte</categoria>
+            <confezioni>
+                2
+            </confezioni>
+            <confezione>
+                <tipologia>parzialmente scremato</tipologia>
+                <grandezza unita="lt">
+                    1
+                </grandezza>
+                <scadenza unita="gg" giorno_riferimento="consegna">
+                    4
+                </scadenza>
+            </confezione>
+        </articolo>
+        <articolo>
+            <categoria>gelato</categoria>
+            <marca>Slurp</marca>
+            <gusto>Limone</gusto>
+            <confezioni>
+                1
+            </confezioni>
+            <confezione>
+                <peso unita="gr">500</peso>
+            </confezione>
+        </articolo>
+        <articolo>
+            <categoria>caffè</categoria>
+            <marca>Hug</marca>
+            <confezioni>
+                1
+            </confezioni>
+            <confezione>
+                <quantita unita="bustine">20</quantita>
+            </confezione>
+        </articolo>
+        <articolo>
+            <categoria>pane</categoria>
+            <confezioni>
+                2
+            </confezioni>
+            <confezione>
+                <peso unita="gr">500</peso>
+                <ingrediente modalita="assente">sale</ingrediente>
+            </confezione>
+        </articolo>
+        <articolo>
+            <categoria>pomodoro</categoria>
+            <confezione>
+                <tipologia>oblungo rosso</tipologia>
+                <peso unita="kg">0.5</peso>
+            </confezione>
+        </articolo>
+        <articolo>
+            <categoria>acqua</categoria>
+            <confezioni>
+                1
+            </confezioni>
+            <confezione>
+                <tipologia>naturale</tipologia>
+                <quantita unita="bottiglie">
+                    6
+                </quantita>
+            </confezione>
+        </articolo>
+    </carrello>
+</ordine>
