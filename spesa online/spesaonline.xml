@@ -1,0 +1,38 @@
+<!-- Esercizio n.1: tradurre in linguaggio XML i seguenti dati, relativi alla spesa online,
+effettuata da un cliente tramite una applicazione web per smart phone. La spesa
+viene ordinata tramite un portale che a sua volta acquista gli articoli in vari negozi e
+impiega il corriere più conveniente, cercando di far risparmiare il consumatore.
+“L’ordine del cliente Paolo Rossi, cliente abituale domiciliato a Livorno in via dei
+Pensieri 60, con contatto p.rossi@mail.com, è stato richiesto il giorno 10 giugno
+2013 alle ore 09.30. La consegna è prevista per giorno 10 giugno 2013 tra le ore
+13.30 e 14.00, presso il domicilio del cliente, e pagamento pianificato a mezzo carta
+di credito immediatamente dopo la consegna”. -->
+<?xml-stylesheet href="style.css" type="text/css"?>
+<ordine>
+    <cliente tipo = "abituale">Paolo Rossi</cliente>
+    <domicilio>
+        <citta>Livorno</citta>
+        <via>via dei Pensieri</via>
+        <civico>60</civico>
+    </domicilio>
+    <contatto>
+        <email>p.rossi@mail.com</email>
+    </contatto>
+    <richiesta>
+        <giorno>10</giorno>
+        <mese>Giugno</mese>
+        <anno>2013</anno>
+        <ora>9.30</ora>
+    </richiesta>
+    <consegna tipo="prevista">
+        <giorno>10</giorno>
+        <mese>Giugno</mese>
+        <anno>2013</anno>
+        <fasciaoraria>13.30 - 14.00</fasciaoraria>
+        <luogo>domicilio del cliente</luogo>
+    </consegna>
+    <pagamento tipo="pianificato">
+        <mezzo>carta di credito</mezzo>
+        <modo>immediatamente dopo la consegna</modo>
+    </pagamento>
+</ordine>
