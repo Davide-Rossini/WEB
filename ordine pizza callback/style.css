@@ -1,11 +1,16 @@
 body {
     font-family: Arial, sans-serif;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #ffe38f;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -45,12 +50,12 @@ button {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #ff5733;
+    background-color: #d02600;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #ff291f;
+    background-color: #f85148;
 }
