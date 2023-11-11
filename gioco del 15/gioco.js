@@ -23,6 +23,12 @@ const shuffle = (arr) =>{
     }
 }
 
+const swap = (arr, i, j) =>{
+    const tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
+}
+
 const tiles = [];
 const tilepos = [];
 for(let i = 0; i < 15; i++){
