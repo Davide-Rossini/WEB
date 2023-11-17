@@ -1,5 +1,16 @@
 <?php
 // Includi il file di configurazione
+if (isset($_GET['lang'])) {
+    // Imposta il cookie con la scelta della lingua
+    $selectedLang = $_GET['lang'];
+    setcookie('selectedLang', $selectedLang, time() + (86400 * 30), "/"); // Cookie valido per 30 giorni
+} else {
+    // Se il cookie esiste già, recupera la lingua selezionata
+    $selectedLang = isset($_COOKIE['selectedLang']) ? $_COOKIE['selectedLang'] : 'it';
+}
+
+// Include i file di lingua
+require_once('lang/lang_' . $selectedLang . '.php');
 require_once('config.php');
 
 // Connessione al database
@@ -53,11 +64,11 @@ $connessione->close();
 ?>
 
 <!DOCTYPE html>
-<html lang="it">
+<html lang="<?php echo $selectedLang; ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistiche Formula 1</title>
+    <title><?php echo $lang['statistiche_formula_1']; ?></title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -149,12 +160,12 @@ $connessione->close();
 </head>
 <body>
 
-    <h1>Classifica Piloti</h1>
+    <h1><?php echo $lang['classifica_piloti']; ?></h1>
     <table>
         <tr>
-            <th>Nome</th>
-            <th>Cognome</th>
-            <th>Vittorie</th>
+            <th><?php echo $lang['nome']; ?></th>
+            <th><?php echo $lang['cognome']; ?></th>
+            <th><?php echo $lang['vittorie']; ?></th>
         </tr>
         <?php while ($row = $resultPiloti->fetch_assoc()): ?>
             <tr>
@@ -165,11 +176,11 @@ $connessione->close();
         <?php endwhile; ?>
     </table>
 
-    <h1>Classifica Scuderie</h1>
+    <h1><?php echo $lang['classifica_scuderie']; ?></h1>
     <table>
         <tr>
-            <th>Nome</th>
-            <th>Vittorie</th>
+            <th><?php echo $lang['nome']; ?></th>
+            <th><?php echo $lang['vittorie']; ?></th>
         </tr>
         <?php while ($row = $resultScuderie->fetch_assoc()): ?>
             <tr>
@@ -179,18 +190,18 @@ $connessione->close();
         <?php endwhile; ?>
     </table>
 
-    <h1>Piloti con almeno 3 vittorie</h1>
+    <h1><?php echo $lang['piloti_3_vittorie']; ?></h1>
     <ul>
         <?php while ($row = $resultPilotiTreVittorie->fetch_assoc()): ?>
             <li><?php echo $row['nome'] . ' ' . $row['cognome']; ?></li>
         <?php endwhile; ?>
     </ul>
 
-    <h1>Scuderie in ordine di introiti dagli sponsor</h1>
+    <h1><?php echo $lang['scuderie_introiti']; ?></h1>
     <table>
         <tr>
-            <th>Nome</th>
-            <th>Introiti</th>
+            <th><?php echo $lang['nome']; ?></th>
+            <th><?php echo $lang['introiti']; ?></th>
         </tr>
         <?php
         // Verifica se $resultScuderieIntroiti contiene dati prima di eseguire il ciclo
