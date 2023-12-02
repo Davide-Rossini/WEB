@@ -18,7 +18,6 @@ body {
 }
 
 .container {
-    /* font-size: 16px; */
     width: 90vw;
     max-width: 37.5em;
     padding: 3em 1.8em;
@@ -33,7 +32,6 @@ body {
 
 .ricerca {
     display: flex;
-    /* align-items: center; */ /* Centra verticalmente il contenuto */
     gap: 1.2em;
 }
 

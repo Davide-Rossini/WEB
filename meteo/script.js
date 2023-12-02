@@ -12,6 +12,7 @@ let getMeteo = () => {
     let url = 'https://api.openweathermap.org/data/2.5/weather?q='+nome_citta+'&appid=7522c38e96cc33f1ee5bd0def3168748&lang=it';
     if(nome_citta === ""){
         alert("Inserisci il nome della città");
+        loader.style.display = "none";
     }
     else{
         fetch(url)
@@ -37,6 +38,10 @@ let getMeteo = () => {
                     document.body.classList.add("smooth-background");
                     document.body.style.backgroundImage = "url('img/clear.jpg')";
                 }
+                if(tempo.trim() == "Mist"){
+                    document.body.classList.add("smooth-background");
+                    document.body.style.backgroundImage = "url('img/mist.webp')";
+                }
                 risultato.innerHTML = `
                     <div class="informazioni">
                         <h2>Meteo: ${data.weather[0].main}🌤️</h2>
@@ -53,6 +58,7 @@ let getMeteo = () => {
             
             else{
                 alert("Città non trovata");
+                loader.style.display = "none";
             }
         })
         .catch(()=>{
