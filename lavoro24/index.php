@@ -81,7 +81,6 @@ if ($result->num_rows > 0) {
 } else {
     $conn->query("INSERT INTO punteggi (user_id, punteggio) VALUES ($user_id, 0)");
 }
-
 if (!isset($_SESSION['parola'])) {
     $result = $conn->query("SELECT parola FROM parole ORDER BY RAND() LIMIT 1");
     $row = $result->fetch_assoc();
