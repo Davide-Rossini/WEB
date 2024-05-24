@@ -13,14 +13,12 @@ if ($conn->connect_error) {
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user = $_POST['username'];
     $pass = $_POST['password'];
-
     $stmt = $conn->prepare("SELECT id, password FROM utenti WHERE username = ?");
     $stmt->bind_param("s", $user);
     $stmt->execute();
     $stmt->store_result();
     $stmt->bind_result($id, $hashed_password);
     $stmt->fetch();
-
     if ($stmt->num_rows > 0 && password_verify($pass, $hashed_password)) {
         $_SESSION['user_id'] = $id;
         $_SESSION['username'] = $user;
@@ -29,10 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         echo "Username o password non corretti.";
     }
-
     $stmt->close();
 }
-
 $conn->close();
 ?>
 

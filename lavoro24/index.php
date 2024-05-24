@@ -49,10 +49,8 @@
         text-decoration: underline;
     }
 </style>
-
 </head>
 <body>
-    
 </body>
 </html>
 
@@ -72,7 +70,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connessione fallita: " . $conn->connect_error);
 }
-
 $user_id = $_SESSION['user_id'];
 
 
@@ -156,15 +153,12 @@ if ($parola_attuale == $parola) {
     echo "Lettere sbagliate: " . implode(', ', $lettere_sbagliate) . "<br>";
     echo "Punteggio totale: $punteggio<br>";
     ?>
-
     <form method="post">
         Inserisci una lettera: <input type="text" name="lettera" maxlength="1" required>
         <input type="submit" value="Invia">
     </form>
     <p><a href="logout.php">Logout</a></p>
-
     <?php
 }
-
 $conn->close();
 ?>
